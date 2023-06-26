@@ -1,0 +1,152 @@
+body {
+  background-color: #222;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+  text-transform: none;
+}
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+main {
+  padding: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project {
+  background-color: #303030;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 800px;
+  display: flex;
+  word-break: break-word;
+}
+
+.timestamp {
+  text-align: left;
+  font-size: 10px;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+}
+
+img {
+  width: 80%;
+  height: 80%;
+  border-radius: 5px;
+}
+
+.project-details {
+  flex-grow: 1;
+}
+
+h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.sub {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+a {
+  background-color: #191919;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #303030;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 10px;
+  padding: 8px 16px;
+  margin: 0 5px;
+  border-radius: 5px;
+  background-color: #404040;
+}
+
+.pagination a:hover {
+  background-color: #212121;
+}
+
+@media (max-width: 768px) {
+  .pagination {
+    flex-wrap: wrap;
+  }
+  
+  .pagination a {
+    margin: 5px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 580px) {
+
+  .thumbnail {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+  }
+  img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .project-details {
+    margin-left: 80px;
+  }
+}
+
+@media (min-width: 580px) {
+  .thumbnail {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+  }
+  img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .project-details {
+    margin-left: 80px;
+  }
+}
