@@ -42,6 +42,9 @@
 - Now you can login with password_hash() encrypted in http://localhost/Hyzore-Personal-Profile/restricted/index.php
 - Now you can add, edit, remove in http://localhost/Hyzore-Personal-Profile/restricted/forbinden/data.php
 
+### Deficiency
+- Possible to hack with sql injection or XSS because doesn't have filter in user input.
+
 ### Gallery
 index.php
 ![Screenshot of a form that can add your project](./src/img/index.png)
